@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/89a8b4c4dc.js" crossorigin="anonymous"></script>
+  <title>Personal Portfolio</title>
+</head>
+
+<body>
+  <navbar>
+    <nav id="navbarexample" class="navbar nav-bar bg-body-tertiary px-3 mb-3">
+      <a class="navbar-brand" href="#"><img src="logo.jpg" alt="" style="height: 42px;
+      "></a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading3">My skill</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading5">My Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading4">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <div class="theme-toggle">
+            <i id="lightIcon" class="fa-solid fa-sun"></i>
+            <i id="darkIcon" class="fa-solid fa-moon"></i>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+  </navbar>
+  
+    <h4 id="scrollspyHeading1"></h4>
+    <div class="home">
+      <div class="hello">Hii I'm</div>
+      <div class="name"></div>
+    </div>
+    <div class="mainabout">
+      <h4 id="scrollspyHeading2"></h4>
+      <div class="left">
+        <div class="picinfo">
+          <div class="pic">
+            <img src="my pic 2.jpg" alt="my img rect">
+          </div>
+          <div class="info">
+            <p class="aboutpara">
+              <span>Name:</span> Sahil bapu chaudhari
+            </p>
+            <p class="aboutpara">
+              <span>Profile:</span>Computer science Student
+            </p>
+            <p class="aboutpara">
+              <span>Email:</span>sahilchaudhari2412@gmail.com
+            </p>
+            <p class="aboutpara">
+              <span>Phone:</span> 9870607907
+          </div>
+        </div>
+        <div class="tab-titles">
+          <p class="tab-links active-item" onclick="show('education')">Education</p>
+          <p class="tab-links" onclick="show('experience')"> Experience</p>
+          <p class="tab-links " onclick="show('atpresent')">At Present</p>
+        </div>
+
+        <div class="abt-content">
+          <ul class="tab-content active-content" id="education">
+            <li class=" abt-titles"><span>></span> Pillai College of Engineering</li>
+            <li class="abt-info">Pursuing Btech Computer Engineering</li>
+            <li class=" abt-titles"><span>></span>C.K.T Junior College</li>
+            <li class="abt-info">Completed 12th in the year 2021</li>
+            <li class=" abt-titles"><span>></span>A.V.B.P Vidhyalaya School</li>
+            <li class="abt-info">Completed 10th in the year 2019</li>
+          </ul>
+          <ul class="tab-content" id="experience">
+            <li class="abt-info">Currently I am a fresher but I have Projects.</li>
+          </ul>
+          <ul class="tab-content" id="atpresent">
+            <li class=" abt-titles"><span>></span> Internship</li>
+            <li class="abt-info">Full Stack Intern at Innomatics Research Labs</li>
+            <li class=" abt-titles"><span>></span> Education</li>
+            <li class="abt-info">In Fourth Semester</li>
+            <li class=" abt-titles"><span>></span> Projects</li>
+            <li class="abt-info">Working on some college project & some other projects too</li>
+
+          </ul>
+
+        </div>
+      </div>
+      <div class="right">
+        <h2>About me</h2>
+        <p>Most of the things you (maybe) want to know about me</p>
+        <p>Hello! I'm Sahil. I'm a 19 y/o student pursuing my undergrad degree in computer science from pillai college
+          of engineering, new panvel.</p>
+        <p> I started programming during my first year of enginnering. I started with C language I'm currently learning
+          Web develpoement✌️.Things I do other than dev and programming?🤔 I do watch tons of movies and shows.I do like
+          Flower photography. I also like listening to music.No matter what your talent is, DevFolio is one of the
+          easiest way to market yourself on the web and attract more clients and grow your business. </p>
+      </div>
+    </div>
+    <div class="servicesmain">
+      <div class="head">
+        <h2 id="scrollspyHeading3">
+          My Skill
+        </h2>
+      </div>
+      <div class="services">
+        <div class="card mb-3" style="max-width: 467px;
+        text-align: center;
+        height: 15rem;">
+          <i class="fa-solid fa-code" style="
+              font-size: 58px;
+              margin-bottom: 17px;
+          "></i>
+          <h5 class="card-title">Coding</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+        <div class="card mb-3" style="max-width: 467px;
+        text-align: center;
+        height: 15rem;">
+
+
+          <i class="fa-solid fa-desktop" style="
+            font-size: 58px;
+            margin-bottom: 17px;"></i>
+
+          <h5 class="card-title">Web develpoement</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+
+        </div>
+      </div>
+      <div class="services">
+        <div class="card mb-3" style="max-width: 467px;
+        text-align: center;
+        height: 15rem;">
+
+          <i class="fa-solid fa-camera" style="
+              font-size: 58px;
+              margin-bottom: 17px;
+          "></i>
+          <h5 class="card-title">Photography</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+        <div class="card mb-3" style="max-width: 467px;
+        text-align: center;
+        height: 15rem;">
+
+          <i class="fa-solid fa-music" style="
+              font-size: 58px;
+              margin-bottom: 17px;
+              "></i>
+          <h5 class="card-title">Music</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <h4 id="scrollspyHeading5"></h4>
+  <div id="my-work">
+    <p id="my-work-heading">My Projects</p>
+    <div class="my-work-container">
+        <div class="work" id="work-5">
+            <h3>tic-tac toe</h3>
+            <img src="tic tac toe.png" alt="" srcset="">
+                <p>Tic Tac Toe is traditionally played on a 3 × 3 grid. Players take turns placing a mark in
+                  one of the cells of the grid. The goal of the game is for players to position their marks so that they make
+                  a continuous line of three cells vertically, horizontally, or diagonally.
+                </p>
+            <div class="work-detail">
+                
+                <button class="show-pro"><a target="_blank"
+                        href="https://github.com/Sahilchaudhari-746/tic-tac-toe.git">
+                        Show Code </a></button>
+                <button class="show-pro"><a href="https://resilient-cobbler-b29216.netlify.app/">Go
+                        Live</a></button>
+
+            </div>
+        </div>
+        <div class="work" id="work-4">
+            <h3>Country Find</h3>
+            <img src="country.png" alt="" srcset="">
+                <p>The City Search API finds cities that match a specific word or string of letters. Using
+                  this API, you can automatically suggest cities based on what the traveler enters in the search field. The
+                  API provides a list of cities with the name, time zone, coordinates, and when possible the closer airport.
+                </p>
+            <div class="work-detail">
+                
+                <button class="show-pro"><a target="_blank"
+                        href="https://github.com/Sahilchaudhari-746/search-country.git">
+                        Show Code </a></button>
+                <button class="show-pro"><a href="https://steady-centaur-57547d.netlify.app/">Go
+                        Live</a></button>
+
+            </div>
+        </div>
+        <div class="work" id="work-3">
+            <h3>Blood Management System</h3>
+            <img src="bms.png" alt="" srcset="">
+            <p>The system manages all the activities from blood collection both from camps & hospitals
+              till the issue of blood units. It includes donor screening, blood collection, storage and issue of the unit .                </p>
+            <div class="work-detail">
+              
+                <button class="show-pro"><a target="_blank"
+                        href="https://github.com/Sahilchaudhari-746/bld-management.git">
+                        Show Code </a></button>
+                <a></a>
+              </div>
+            </div>
+            <div class="work" id="work-2">
+            <h3>Doctor booking appointment</h3>
+            <img src="doctor booking.png" alt="" srcset="">
+            <p>A patient can quickly locate the nearest doctor in his/her locality and book an appointment
+              for a direct consultation.Search by City/Specialization/Doctor to view the doctor details and book an appointment online Get notified with appointment status updates by eMail/SMS and also through our Chatbot Booking Doctor Appointment</p>
+              <div class="work-detail">
+                <button class="show-pro"><a target="_blank"
+                  href="https://github.com/Sahilchaudhari-746/book-doc.git">
+                  Show Code </a></button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="fullcontact">
+        <h4 id="scrollspyHeading4"></h4>
+        <p id="my-work-heading">Contact Us</p>
+        <div class="contact-info">
+          <h3>Email Me At </h3>
+          <a href="mailto:sahilchaudhari2412@gmail.com"><p>sahilchaudhari2412@gmail.com</p></a>
+          <h3>Find Me On </h3>
+          <div class="contact-links">
+            <a class="" href="https://www.instagram.com/sahilchaudhari_sc_746/?hl=en">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <a class="" href="https://github.com/Sahilchaudhari-746"><i class="fab fa-github"></i></a>
+            <a class="" href="https://www.linkedin.com/in/sahil-chaudhari-5567a3254/">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+          </div>
+        
+        </div>
+        <div class="contactform">
+        
+  <form name="submit-to-google-sheet">
+    <div class="mb-3">
+      <label for="clientphone" class="form-label">Name</label>
+      <input type="text" name="Name" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" name="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll not share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="clientphone" class="form-label">phone no</label>
+      <input type="text" name="clientphone" class="form-control" id="exampleInputPassword1" required>
+    </div>
+    <div class="mb-3">
+      <label for="clientphone" class="form-label">Enquiry</label>
+      <input type="Enquiry" name="Enquiry" class="form-control" id="exampleInputPassword1">
+    </div>
+    
+    <div class="buttons">
+      <button type="submit" style="width: 80px;">Submit</button>
+    </div>
+  </form>
+  <span id="msg"></span>
+</div>
+</div>
+</div>
+<!--Section: Contact v.2-->
+
+</div>
+
+
+    <div class="copyright">
+      <p> © 2023 sahil chaudhari. Made  by me</p>
+  </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  <script src="https://kit.fontawesome.com/89a8b4c4dc.js" crossorigin="anonymous"></script>
+  <script>
+    var typed = new Typed(".name", {
+      strings: ["Sahil Chaudhari", "Sahil chaudhari", "Sahil Chaudhari"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true
+    })
+  </script>
+  <script src="script2.js"></script>
+  <script>
+    let abtitems = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-content");
+    function show(tabname) {
+      for (abtitem of abtitems)
+        abtitem.classList.remove("active-item");
+
+      for (tabcontent of tabcontents)
+        tabcontent.classList.remove("active-content");
+
+      event.currentTarget.classList.add("active-item");
+      document.getElementById(tabname).classList.add("active-content")
+    }
+  </script>
+  <script>
+  const darkIcon = document.getElementById('darkIcon');
+    const lightIcon = document.getElementById('lightIcon');
+    const body = document.body;
+    lightIcon.style.display = 'none';
+    darkIcon.addEventListener('click', function () {
+      body.classList.add('dark');
+      body.classList.remove('light');
+      lightIcon.style.display = 'inline-block';
+      darkIcon.style.display = 'none';
+    });
+    
+    lightIcon.addEventListener('click', function () {
+      body.classList.add('light');
+      body.classList.remove('dark');
+      darkIcon.style.display = 'inline-block';
+      lightIcon.style.display = 'none';
+    });
+    </script>
+     <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxthiF3hpA3PMwtUhe_fFKmc0knrU1pbL9PUVy71o_1GrqNChmsFfLB3_1xv07IP3GtUA/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg= document.getElementById("msg")
+      
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {alert("Message has been sent sucessully.")
+      setTimeout(function() {
+        msg.innerHTML=""
+      }, 5000)
+    form.reset();
+    })
+        .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  
+</body>
+
+</html>
