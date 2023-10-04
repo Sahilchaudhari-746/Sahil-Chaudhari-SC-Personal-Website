@@ -12,3 +12,20 @@ var tablinks=document.getElementsByClassName("tab-links");
     
   
     }
+    function showSkills() {
+      var skillsDiv = document.getElementById("skills");
+      var photosDiv = document.getElementById("photos");
+    
+      skillsDiv.style.display = "block";
+      photosDiv.style.display = "none";
+    }
+    
+    function showPhotos() {
+      var skillsDiv = document.getElementById("skills");
+      var photosDiv = document.getElementById("photos");
+    
+      skillsDiv.style.display = "none";
+      photosDiv.style.display = "block";
+    }
+    
+    

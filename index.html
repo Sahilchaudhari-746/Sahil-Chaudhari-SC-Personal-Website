@@ -10,6 +10,63 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/89a8b4c4dc.js" crossorigin="anonymous"></script>
   <title>Personal Portfolio</title>
+  <style>
+    /* Your existing CSS styles */
+
+    /* Add CSS for the mobile menu */
+    .mobile-menu {
+      display: none;
+      background-color: #2a2929;
+      position: fixed;
+      top: 4.3rem;
+      right: 0;
+      bottom: 0;
+      z-index: 1000;
+      flex-direction: column;
+      padding: 1rem;
+      text-align: center;
+      width: 35%;
+     
+    }
+
+    .mobile-menu a {
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 10px;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 10px;
+      box-shadow: 1px 1px 10px #0761d4;
+      padding: 1rem;
+      /* margin-top: 1rem; */
+      border: none;
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      float: left;
+      line-height: 2em;
+      font-size: 18px;
+    }
+
+    .first {
+      margin-top: 1.3rem;
+    }
+    .mb-main{
+      /* transform: translateX(100%); */
+      transition: transform 0.5s ease-in-out;
+    }
+
+    /* Media query for screen width less than 650px */
+    @media (max-width: 750px) {
+      ul {
+        display: none;
+      }
+
+      .mobile-menu {
+        display: flex;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -34,272 +91,370 @@
           <a class="nav-link" href="#scrollspyHeading4">Contact Us</a>
         </li>
         <li class="nav-item">
-          <div class="theme-toggle">
-            <i id="lightIcon" class="fa-solid fa-sun"></i>
-            <i id="darkIcon" class="fa-solid fa-moon"></i>
-          </div>
         </li>
+        <!-- <div class="theme-toggle">
+          <i id="lightIcon" class="fa-solid fa-sun"></i>
+          <i id="darkIcon" class="fa-solid fa-moon"></i>
+        </div> -->
       </ul>
-
+      <div class="menubar">
+        <i class="fa-solid fa-bars" style="color: #000000;"></i>
+      </div>
     </nav>
   </navbar>
-  
-    <h4 id="scrollspyHeading1"></h4>
-    <div class="home">
-      <div class="hello">Hii I'm</div>
-      <div class="name"></div>
+  <div class="mb-main">
+    <div class="mobile-menu">
+
+      <a class="first" href="#scrollspyHeading1">Home</a>
+      <a href="#scrollspyHeading2">About</a>
+      <a href="#scrollspyHeading3">My skill</a>
+      <a href="#scrollspyHeading5">My Projects</a>
+      <a href="#scrollspyHeading4">Contact Us</a>
+
+      <!-- Add any other mobile-specific links or content here -->
     </div>
-    <div class="mainabout">
-      <h4 id="scrollspyHeading2"></h4>
-      <div class="left">
-        <div class="picinfo">
-          <div class="pic">
-            <img src="my pic 2.jpg" alt="my img rect">
+  </div>
+  <h4 id="scrollspyHeading1"></h4>
+  <div class="home">
+    <div class="hello">Hii I'm</div>
+    <div class="name"></div>
+  </div>
+  <h4 id="scrollspyHeading2"></h4>
+  <div class="mainabout">
+    <div class="left">
+      <div class="picinfo">
+        <div class="pic">
+          <img src="my pic 2.jpg" alt="my img rect">
+        </div>
+        <div class="info">
+          <p class="aboutpara">
+            <span>Name:</span> Sahil bapu chaudhari
+          </p>
+          <p class="aboutpara">
+            <span>Profile:</span>Computer science Student
+          </p>
+          <p class="aboutpara">
+            <span>Email:</span>sahilchaudhari2412@gmail.com
+          </p>
+          <p class="aboutpara">
+            <span>Phone:</span> 9870607907
+        </div>
+      </div>
+      <div class="tab-titles">
+        <p class="tab-links active-item" onclick="show('education')">Education</p>
+        <p class="tab-links" onclick="show('experience')"> Experience</p>
+        <p class="tab-links " onclick="show('atpresent')">At Present</p>
+      </div>
+
+      <div class="abt-content">
+        <ul class="tab-content active-content" id="education">
+          <li class=" abt-titles"><span>></span> Pillai College of Engineering</li>
+          <li class="abt-info">Pursuing Btech Computer Engineering</li>
+          <li class=" abt-titles"><span>></span>C.K.T Junior College</li>
+          <li class="abt-info">Completed 12th in the year 2021</li>
+          <li class=" abt-titles"><span>></span>A.V.B.P Vidhyalaya School</li>
+          <li class="abt-info">Completed 10th in the year 2019</li>
+        </ul>
+        <ul class="tab-content" id="experience">
+          <li class="abt-info">Currently I am a fresher but I have Projects.</li>
+        </ul>
+        <ul class="tab-content" id="atpresent">
+          <li class=" abt-titles"><span>></span> Internship</li>
+          <li class="abt-info">Full Stack Intern at Innomatics Research Labs</li>
+          <li class=" abt-titles"><span>></span> Education</li>
+          <li class="abt-info">In Fourth Semester</li>
+          <li class=" abt-titles"><span>></span> Projects</li>
+          <li class="abt-info">Working on some college project & some other projects too</li>
+
+        </ul>
+
+      </div>
+    </div>
+    <div class="right">
+      <h2>About me</h2>
+      <p>Most of the things you (maybe) want to know about me</p>
+      <p>Hello! I'm Sahil. I'm a 19 y/o student pursuing my undergrad degree in computer science from pillai college
+        of engineering, new panvel.</p>
+      <p> I started programming during my first year of enginnering. I started with C language I'm currently learning
+        Web develpoement✌️.Things I do other than dev and programming?🤔 I do watch tons of movies and shows.I do like
+        Flower photography. I also like listening to music.No matter what your talent is, DevFolio is one of the
+        easiest way to market yourself on the web and attract more clients and grow your business. </p>
+    </div>
+  </div>
+  <h2 id="scrollspyHeading3">
+  </h2>
+  <div class="servicesmain">
+    <div class="head">
+      <p id="my-work-heading">My Skill</p>
+    </div>
+    <div class="skill-head">
+      <p class="heading-name1 active" onclick="showSkills()">Programing skill</p>
+      <p class="heading-name2" onclick="showPhotos()">Photography</p>
+    </div>
+    <div class="skill1" id="skills">
+      <div class="lan">
+        <div class="lan1">
+          <img src="languages/c.png" alt="">
+          <p>C</p>
+        </div>
+        <div class="lan1">
+          <img src="languages/c++.png" alt="">
+          <p>C++</p>
+        </div>
+        <div class="lan1">
+          <img src="languages/java.png" alt="">
+          <p>Java</p>
+        </div>
+        <div class="lan1">
+          <img src="languages/html.png" alt="">
+          <p>Html</p>
+        </div>
+        <div class="lan1">
+          <img src="languages/css.png " alt="">
+          <p>CSS</p>
+        </div>
+        <div class="lan1">
+          <img src="languages/javascript.png" alt="">
+          <p>Javascript</p>
+        </div>
+        <div class="lan1">
+          <img src="languages/php.png" alt="">
+          <p>PHP</p>
+        </div>
+        <div class="lan1">
+          <img src="languages/dsa.jpg" alt="">
+          <p>DSA</p>
+        </div>
+        <div class="lan1">
+          <img src="languages/react.png " alt="">
+          <p>React js</p>
+        </div>
+        <div class="lan1">
+          <img src="languages/python.png" alt="">
+          <p>Python</p>
+        </div>
+        <div class="lan1">
+          <img src="languages/posgrssql.png" alt="">
+          <p>Mysql</p>
+        </div>
+        <div class="lan1">
+          <img src="languages/mongodb.png" alt="">
+          <p>Mongodb</p>
+        </div>
+      </div>
+    </div>
+    <div id="photos">
+      <div class="row mx-3">
+        <div class="col card text-bg-dark">
+          <img src="cloud.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Clouds</h5>
+            <a href="clouds.html"><button class="view-button" id="viewBeachButton">View Pictures</button></a>
           </div>
-          <div class="info">
-            <p class="aboutpara">
-              <span>Name:</span> Sahil bapu chaudhari
-            </p>
-            <p class="aboutpara">
-              <span>Profile:</span>Computer science Student
-            </p>
-            <p class="aboutpara">
-              <span>Email:</span>sahilchaudhari2412@gmail.com
-            </p>
-            <p class="aboutpara">
-              <span>Phone:</span> 9870607907
+        </div>
+        <div class="col card text-bg-dark">
+          <img src="flower.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Flower</h5>
+            <a href="flower.html"><button class="view-button" id="viewBeachButton">View Pictures</button></a>
           </div>
         </div>
-        <div class="tab-titles">
-          <p class="tab-links active-item" onclick="show('education')">Education</p>
-          <p class="tab-links" onclick="show('experience')"> Experience</p>
-          <p class="tab-links " onclick="show('atpresent')">At Present</p>
-        </div>
-
-        <div class="abt-content">
-          <ul class="tab-content active-content" id="education">
-            <li class=" abt-titles"><span>></span> Pillai College of Engineering</li>
-            <li class="abt-info">Pursuing Btech Computer Engineering</li>
-            <li class=" abt-titles"><span>></span>C.K.T Junior College</li>
-            <li class="abt-info">Completed 12th in the year 2021</li>
-            <li class=" abt-titles"><span>></span>A.V.B.P Vidhyalaya School</li>
-            <li class="abt-info">Completed 10th in the year 2019</li>
-          </ul>
-          <ul class="tab-content" id="experience">
-            <li class="abt-info">Currently I am a fresher but I have Projects.</li>
-          </ul>
-          <ul class="tab-content" id="atpresent">
-            <li class=" abt-titles"><span>></span> Internship</li>
-            <li class="abt-info">Full Stack Intern at Innomatics Research Labs</li>
-            <li class=" abt-titles"><span>></span> Education</li>
-            <li class="abt-info">In Fifth Semester</li>
-            <li class=" abt-titles"><span>></span> Projects</li>
-            <li class="abt-info">Working on some college project & some other projects too</li>
-
-          </ul>
-
-        </div>
       </div>
-      <div class="right">
-        <h2>About me</h2>
-        <p>Most of the things you (maybe) want to know about me</p>
-        <p>Hello! I'm Sahil. I'm a 19 y/o student pursuing my undergrad degree in computer science from pillai college
-          of engineering, new panvel.</p>
-        <p> I started programming during my first year of enginnering. I started with C language I'm currently learning
-          Web develpoement✌️.Things I do other than dev and programming?🤔 I do watch tons of movies and shows.I do like
-          Flower photography. I also like listening to music.No matter what your talent is, DevFolio is one of the
-          easiest way to market yourself on the web and attract more clients and grow your business. </p>
+      <div class="row mx-3">
+        <div class="col card text-bg-dark">
+          <img src="cloud and mountain.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Cloud and mountain</h5>
+            <a href="cloudandmount.html"><button class="view-button" id="viewBeachButton">View Pictures</button></a>
+          </div>
+        </div>
+        <div class="col card text-bg-dark">
+          <img src="sunsetbeach.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Beach</h5>
+            <a href="sunsetbeach.html"><button class="view-button" id="viewBeachButton">View Pictures</button></a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="servicesmain">
-      <div class="head">
-        <h2 id="scrollspyHeading3">
-          My Skill
-        </h2>
-      </div>
-      <div class="services">
-        <div class="card mb-3" style="max-width: 467px;
-        text-align: center;
-        height: 15rem;">
-          <i class="fa-solid fa-code" style="
-              font-size: 58px;
-              margin-bottom: 17px;
-          "></i>
-          <h5 class="card-title">Coding</h5>
-          <p class="card-text">"With a keyboard as my canvas, my coding portfolio reflects my dedication to crafting functional
-            and innovative solutions. From web applications to algorithms, I showcase my skills in turning ideas into lines of code."</p>
-        </div>
-        <div class="card mb-3" style="max-width: 467px;
-        text-align: center;
-        height: 15rem;">
-
-
-          <i class="fa-solid fa-desktop" style="
-            font-size: 58px;
-            margin-bottom: 17px;"></i>
-
-          <h5 class="card-title">Web develpoement</h5>
-          <p class="card-text">"I am a skilled web developer with expertise in designing and building responsive websites.
-            My work combines creative design with efficient coding to deliver user-friendly and visually appealing online experiences"</p>
-
-        </div>
-      </div>
-      <div class="services">
-        <div class="card mb-3" style="max-width: 467px;
-        text-align: center;
-        height: 15rem;">
-
-          <i class="fa-solid fa-camera" style="
-              font-size: 58px;
-              margin-bottom: 17px;
-          "></i>
-          <h5 class="card-title">Photography</h5>
-          <p class="card-text">"Exploring the beauty of the natural world through my lens, my portfolio reflects my deep admiration for nature's wonders." </p>
-        </div>
-        <div class="card mb-3" style="max-width: 467px;
-        text-align: center;
-        height: 15rem;">
-
-          <i class="fa-solid fa-music" style="
-              font-size: 58px;
-              margin-bottom: 17px;
-              "></i>
-          <h5 class="card-title">Music</h5>
-          <p class="card-text">"Expressing emotions through melodies, my music portfolio showcases my journey as a versatile musician. From soulful compositions to energetic beats,
-            my work resonates with a passion for creating captivating musical experiences"</p>
-        </div>
-
-      </div>
-    </div>
+  </div>
   </div>
   </div>
   <h4 id="scrollspyHeading5"></h4>
   <div id="my-work">
     <p id="my-work-heading">My Projects</p>
     <div class="my-work-container">
+      <div class="navigation ">
+        <div class="nav-icon prev">
+          <i class="fas fa-chevron-left"></i>
+        </div>
         <div class="work" id="work-5">
-            <h3>tic-tac toe</h3>
-            <img src="tic tac toe.png" alt="" srcset="">
-                <p>Tic Tac Toe is traditionally played on a 3 × 3 grid. Players take turns placing a mark in
-                  one of the cells of the grid. The goal of the game is for players to position their marks so that they make
-                  a continuous line of three cells vertically, horizontally, or diagonally.
-                </p>
-            <div class="work-detail">
-                
-                <button class="show-pro"><a target="_blank"
-                        href="https://github.com/Sahilchaudhari-746/tic-tac-toe.git">
-                        Show Code </a></button>
-                <button class="show-pro"><a href="https://resilient-cobbler-b29216.netlify.app/">Go
-                        Live</a></button>
+          <h3>tic-tac toe</h3>
+          <img src="tic tac toe.png" alt="" srcset="">
+          <p>Tic Tac Toe is traditionally played on a 3 × 3 grid. Players take turns placing a mark in
+            one of the cells of the grid. The goal of the game is for players to position their marks so that they make
+            a continuous line of three cells vertically, horizontally, or diagonally.
+          </p>
+          <div class="work-detail">
 
-            </div>
+            <button class="show-pro"><a target="_blank" href="https://github.com/Sahilchaudhari-746/tic-tac-toe.git">
+                Show Code </a></button>
+            <button class="show-pro"><a href="https://resilient-cobbler-b29216.netlify.app/">Go
+                Live</a></button>
+
+          </div>
         </div>
         <div class="work" id="work-4">
-            <h3>Country Find</h3>
-            <img src="country.png" alt="" srcset="">
-                <p>The City Search API finds cities that match a specific word or string of letters. Using
-                  this API, you can automatically suggest cities based on what the traveler enters in the search field. The
-                  API provides a list of cities with the name, time zone, coordinates, and when possible the closer airport.
-                </p>
-            <div class="work-detail">
-                
-                <button class="show-pro"><a target="_blank"
-                        href="https://github.com/Sahilchaudhari-746/search-country.git">
-                        Show Code </a></button>
-                <button class="show-pro"><a href="https://steady-centaur-57547d.netlify.app/">Go
-                        Live</a></button>
+          <h3>Country Find</h3>
+          <img src="country.png" alt="" srcset="">
+          <p>The City Search API finds cities that match a specific word or string of letters. Using
+            this API, you can automatically suggest cities based on what the traveler enters in the search field. The
+            API provides a list of cities with the name, time zone, coordinates, and when possible the closer airport.
+          </p>
+          <div class="work-detail">
 
-            </div>
+            <button class="show-pro"><a target="_blank" href="https://github.com/Sahilchaudhari-746/search-country.git">
+                Show Code </a></button>
+            <button class="show-pro"><a href="https://steady-centaur-57547d.netlify.app/">Go
+                Live</a></button>
+
+          </div>
         </div>
         <div class="work" id="work-3">
-            <h3>Blood Management System</h3>
-            <img src="bms.png" alt="" srcset="">
-            <p>The system manages all the activities from blood collection both from camps & hospitals
-              till the issue of blood units. It includes donor screening, blood collection, storage and issue of the unit .                </p>
-            <div class="work-detail">
-              
-                <button class="show-pro"><a target="_blank"
-                        href="https://github.com/Sahilchaudhari-746/bld-management.git">
-                        Show Code </a></button>
-                <a></a>
-              </div>
-            </div>
-            <div class="work" id="work-2">
-            <h3>Doctor booking appointment</h3>
-            <img src="doctor booking.png" alt="" srcset="">
-            <p>A patient can quickly locate the nearest doctor in his/her locality and book an appointment
-              for a direct consultation.Search by City/Specialization/Doctor to view the doctor details and book an appointment online Get notified with appointment status updates by eMail/SMS and also through our Chatbot Booking Doctor Appointment</p>
-              <div class="work-detail">
-                <button class="show-pro"><a target="_blank"
-                  href="https://github.com/Sahilchaudhari-746/book-doc.git">
-                  Show Code </a></button>
-                </div>
-              </div>
-              
-            </div>
+          <h3>Blood Management System</h3>
+          <img src="bms.png" alt="" srcset="">
+          <p>The system manages all the activities from blood collection both from camps & hospitals
+            till the issue of blood units. It includes donor screening, blood collection, storage and issue of the unit
+            .
+          </p>
+          <div class="work-detail">
+
+            <button class="show-pro"><a target="_blank" href="https://github.com/Sahilchaudhari-746/bld-management.git">
+                Show Code </a></button>
+            <a></a>
           </div>
         </div>
-        <div class="fullcontact">
-        <h4 id="scrollspyHeading4"></h4>
-        <p id="my-work-heading">Contact Us</p>
-        <div class="contact-info">
-          <h3>Email Me At </h3>
-          <a href="mailto:sahilchaudhari2412@gmail.com"><p>sahilchaudhari2412@gmail.com</p></a>
-          <h3>Find Me On </h3>
-          <div class="contact-links">
-            <a class="" href="https://www.instagram.com/sahilchaudhari_sc_746/?hl=en">
-              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
-            <a class="" href="https://github.com/Sahilchaudhari-746"><i class="fab fa-github"></i></a>
-            <a class="" href="https://www.linkedin.com/in/sahil-chaudhari-5567a3254/">
-              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
+        <div class="work" id="work-2">
+          <h3>Doctor booking appointment</h3>
+          <img src="doctor booking.png" alt="" srcset="">
+          <p>A patient can quickly locate the nearest doctor in his/her locality and book an appointment
+            for a direct consultation.Search by City/Specialization/Doctor to view the doctor details and book an
+            appointment online Get notified with appointment status updates by eMail/SMS and also through our Chatbot
+            Booking Doctor Appointment</p>
+          <div class="work-detail">
+            <button class="show-pro"><a target="_blank" href="https://github.com/Sahilchaudhari-746/book-doc.git">
+                Show Code </a></button>
           </div>
-        
         </div>
-        <div class="contactform">
-        
-  <form name="submit-to-google-sheet">
-    <div class="mb-3">
-      <label for="clientphone" class="form-label">Name</label>
-      <input type="text" name="Name" required>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" name="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll not share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-      <label for="clientphone" class="form-label">phone no</label>
-      <input type="text" name="clientphone" class="form-control" id="exampleInputPassword1" required>
-    </div>
-    <div class="mb-3">
-      <label for="clientphone" class="form-label">Enquiry</label>
-      <input type="Enquiry" name="Enquiry" class="form-control" id="exampleInputPassword1">
-    </div>
-    
-    <div class="buttons">
-      <button type="submit" style="width: 80px;">Submit</button>
-    </div>
-  </form>
-  <span id="msg"></span>
-</div>
-</div>
-</div>
-<!--Section: Contact v.2-->
+        <div class="work" id="work-3">
+          <h3>News Api</h3>
+          <img src="news.png" alt="" srcset="">
+          <p>The News API is a system that manages the retrieval and distribution of news articles from various sources
+            and publishers. It covers activities from collecting news articles, categorizing them, storing the data, and
+            making it available for access by developers and applications. Essentially, the News API provides a way to
+            access and integrate news content into websites, applications, and other platforms.
+            .
+          </p>
+          <div class="work-detail">
 
-</div>
+            <button class="show-pro"><a target="_blank" href="https://github.com/Sahilchaudhari-746/news-api.git">
+                Show Code </a></button>
+            <a></a>
+          </div>
+        </div>
+        <div class="work" id="work-3">
+          <h3>Covid Api</h3>
+          <img src="covid.png" alt="" srcset="">
+          <p>The COVID API is a system that manages data related to the COVID-19 pandemic. It collects and provides
+            information on COVID-19 cases, testing, vaccination, and related statistics from various sources, including
+            health organizations and governments. This API allows developers and applications to access real-time data
+            about the COVID-19 situation, enabling them to display up-to-date information and statistics about the
+            pandemic to users.
+          </p>
+          <div class="work-detail">
 
+            <button class="show-pro"><a target="_blank" href="https://github.com/Sahilchaudhari-746/Covid-api.git">
+                Show Code </a></button>
+            <a></a>
+          </div>
+        </div>
+        <div class="nav-icon next">
+          <i class="fas fa-chevron-right"></i>
+        </div>
 
-    <div class="copyright">
-      <p> © 2023 sahil chaudhari. Made  by me</p>
+      </div>
+      <div class="dot-navigation">
+        <i class="fas fa-chevron-left" id="prev-dot"></i>
+        <i class="fas fa-circle" id="current-dot"></i>
+        <i class="fas fa-chevron-right" id="next-dot"></i>
+      </div>
+    </div>
   </div>
-    <!-- Copyright -->
+  <h4 id="scrollspyHeading4"></h4>
+  <div class="fullcontact">
+
+    <p id="my-contact-heading">Contact Us</p>
+    <div class="contact-info">
+      <h3>Email Me At </h3>
+      <a href="mailto:sahilchaudhari2412@gmail.com">
+        <p>sahilchaudhari2412@gmail.com</p>
+      </a>
+      <h3>Find Me On </h3>
+      <div class="contact-links">
+        <a class="" href="https://www.instagram.com/sahilchaudhari_sc_746/?hl=en">
+          <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+        <a class="" href="https://github.com/Sahilchaudhari-746"><i class="fab fa-github"></i></a>
+        <a class="" href="https://www.linkedin.com/in/sahil-chaudhari-5567a3254/">
+          <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+      </div>
+
+    </div>
+    <div class="contactform">
+
+      <form name="submit-to-google-sheet">
+        <div class="mb-3">
+          <label for="clientphone" class="form-label">Name</label>
+          <input type="text" name="Name" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" name="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll not share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="clientphone" class="form-label">phone no</label>
+          <input type="text" name="clientphone" class="form-control" id="exampleInputPassword1" required>
+        </div>
+        <div class="mb-3">
+          <label for="clientphone" class="form-label">Enquiry</label>
+          <input type="Enquiry" name="Enquiry" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="buttons">
+          <button type="submit" style="width: 80px;">Submit</button>
+        </div>
+      </form>
+      <span id="msg"></span>
+    </div>
+  </div>
+  </div>
+  <!--Section: Contact v.2-->
+
+  </div>
+
+
+  <div class="copyright">
+    <p> © 2023 sahil chaudhari. Made by me</p>
+  </div>
+  <!-- Copyright -->
 
   </footer>
   <!-- Footer -->
   <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
   <script src="https://kit.fontawesome.com/89a8b4c4dc.js" crossorigin="anonymous"></script>
+
   <script>
     var typed = new Typed(".name", {
       strings: ["Sahil Chaudhari", "Sahil chaudhari", "Sahil Chaudhari"],
@@ -307,6 +462,194 @@
       backSpeed: 50,
       loop: true
     })
+  </script>
+
+
+
+  <script>
+      < script >
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all the work div blocks and convert them to an array
+        var workBlocks = Array.from(document.querySelectorAll(".my-work-container .work"));
+
+        // Initialize the index to 0 (start with the first work block)
+        var currentIndex = 0;
+
+        // Function to show the current work block
+        function showWorkBlock(index) {
+          workBlocks.forEach(function (work, i) {
+            if (i === index) {
+              work.style.display = "block";
+            } else {
+              work.style.display = "none";
+            }
+          });
+        }
+
+        // Show the initial work block
+        showWorkBlock(currentIndex);
+
+        // Add event listener for the Next button
+        document.getElementById("next-btn").addEventListener("click", function () {
+          currentIndex++;
+          if (currentIndex >= workBlocks.length) {
+            currentIndex = 0; // Wrap around to the first work block
+          }
+          showWorkBlock(currentIndex);
+        });
+
+        // Add event listener for the Previous button
+        document.getElementById("prev-btn").addEventListener("click", function () {
+          currentIndex--;
+          if (currentIndex < 0) {
+            currentIndex = workBlocks.length - 1; // Wrap around to the last work block
+          }
+          showWorkBlock(currentIndex);
+        });
+      });
+  </script>
+
+
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var workBlocks = document.querySelectorAll(".my-work-container .work");
+      var currentIndex = 0;
+
+      function showWorkBlock(index) {
+        workBlocks.forEach(function (work, i) {
+          if (i === index) {
+            work.style.display = "block";
+          } else {
+            work.style.display = "none";
+          }
+        });
+      }
+
+      function updateDotNavigation() {
+        document.getElementById("prev-dot").classList.remove("active-dot");
+        document.getElementById("current-dot").classList.remove("active-dot");
+        document.getElementById("next-dot").classList.remove("active-dot");
+        document.getElementById("current-dot").classList.add("active-dot");
+      }
+
+      showWorkBlock(currentIndex);
+      updateDotNavigation();
+
+      function goToNextWork() {
+        currentIndex++;
+        if (currentIndex >= workBlocks.length) {
+          currentIndex = 0;
+        }
+        showWorkBlock(currentIndex);
+        updateDotNavigation();
+      }
+
+      function goToPrevWork() {
+        currentIndex--;
+        if (currentIndex < 0) {
+          currentIndex = workBlocks.length - 1;
+        }
+        showWorkBlock(currentIndex);
+        updateDotNavigation();
+      }
+
+      document.getElementById("next-dot").addEventListener("click", goToNextWork);
+      document.getElementById("prev-dot").addEventListener("click", goToPrevWork);
+    });
+  </script>
+
+  <script>
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const workBlocks = document.querySelectorAll(".work");
+      const prevIcon = document.querySelector(".nav-icon.prev");
+      const nextIcon = document.querySelector(".nav-icon.next");
+      let currentIndex = 0;
+
+      // Function to show/hide work blocks based on the current index
+      function showWorkBlocks() {
+        workBlocks.forEach((block, index) => {
+          if (index >= currentIndex && index < currentIndex + 1) {
+            block.style.display = "block";
+          } else {
+            block.style.display = "none";
+          }
+        });
+      }
+
+      // Initialize by showing the first two work blocks
+      showWorkBlocks();
+
+      // Event listener for the next icon
+      nextIcon.addEventListener("click", function () {
+        if (currentIndex + 1 < workBlocks.length) {
+          currentIndex += 1;
+          showWorkBlocks();
+        }
+      });
+
+      // Event listener for the previous icon
+      prevIcon.addEventListener("click", function () {
+        if (currentIndex > 0) {
+          currentIndex -= 1;
+          showWorkBlocks();
+        }
+      });
+    });
+
+  </script>
+  <script>
+    function showSkills() {
+      document.getElementById("skills").style.display = "block";
+      document.getElementById("photos").style.display = "none";
+
+      // Add 'active' class to the clicked paragraph
+      document.querySelector(".heading-name1").classList.add("active");
+      document.querySelector(".heading-name2").classList.remove("active");
+    }
+
+    // Function to show photography options (Clouds and Flower)
+    function showPhotos() {
+      document.getElementById("skills").style.display = "none";
+      document.getElementById("photos").style.display = "block";
+
+      // Add 'active' class to the clicked paragraph
+      document.querySelector(".heading-name1").classList.remove("active");
+      document.querySelector(".heading-name2").classList.add("active");
+    }
+
+    showSkills();
+
+
+  </script>
+  <script>
+    function showSkills() {
+      var skillsDiv = document.getElementById("skills");
+      var photosDiv = document.getElementById("photos");
+
+      skillsDiv.style.display = "block";
+      photosDiv.style.display = "none";
+
+      // Add 'active' class to the clicked paragraph
+      document.querySelector(".heading-name1").classList.add("active");
+      document.querySelector(".heading-name2").classList.remove("active");
+    }
+
+    function showPhotos() {
+      var skillsDiv = document.getElementById("skills");
+      var photosDiv = document.getElementById("photos");
+
+      skillsDiv.style.display = "none";
+      photosDiv.style.display = "block";
+
+      // Add 'active' class to the clicked paragraph
+      document.querySelector(".heading-name1").classList.remove("active");
+      document.querySelector(".heading-name2").classList.add("active");
+    }
+
+
   </script>
   <script src="script2.js"></script>
   <script>
@@ -324,42 +667,57 @@
     }
   </script>
   <script>
-  const darkIcon = document.getElementById('darkIcon');
+    const navbar = document.getElementById('navbarexample');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    // Function to toggle the mobile menu visibility
+    function toggleMobileMenu() {
+      mobileMenu.style.display = (mobileMenu.style.display === 'flex') ? 'none' : 'flex';
+    }
+
+    // Add a click event listener to the navbar brand (hamburger icon) for toggling the mobile menu
+    const navbarBrand = navbar.querySelector('.menubar');
+    navbarBrand.addEventListener('click', toggleMobileMenu);
+    let prevScrollPos = window.pageYOffset;
+  </script>
+  <script>
+    const darkIcon = document.getElementById('darkIcon');
     const lightIcon = document.getElementById('lightIcon');
     const body = document.body;
-    lightIcon.style.display = 'none';
+    darkIcon.style.display = 'none';
     darkIcon.addEventListener('click', function () {
       body.classList.add('dark');
       body.classList.remove('light');
       lightIcon.style.display = 'inline-block';
       darkIcon.style.display = 'none';
     });
-    
+
     lightIcon.addEventListener('click', function () {
       body.classList.add('light');
       body.classList.remove('dark');
       darkIcon.style.display = 'inline-block';
       lightIcon.style.display = 'none';
     });
-    </script>
-     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxthiF3hpA3PMwtUhe_fFKmc0knrU1pbL9PUVy71o_1GrqNChmsFfLB3_1xv07IP3GtUA/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg= document.getElementById("msg")
-      
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {alert("Message has been sent sucessully.")
-      setTimeout(function() {
-        msg.innerHTML=""
-      }, 5000)
-    form.reset();
-    })
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxthiF3hpA3PMwtUhe_fFKmc0knrU1pbL9PUVy71o_1GrqNChmsFfLB3_1xv07IP3GtUA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          alert("Message has been sent sucessully.")
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset();
+        })
         .catch(error => console.error('Error!', error.message))
-      })
-    </script>
-  
+    })
+  </script>
+
 </body>
 
 </html>

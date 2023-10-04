@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0761d4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.album {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.album h2 {
+    margin: 0;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.photos img {
+    max-width: 50%;
+    margin: 5px;
+}
+/* Add this CSS code to your styles.css file */
+
+/* Styles for images on hover */
+.photos img:hover {
+    border: 2px solid #0761d4; /* Add a border when hovering */
+    transform: scale(1.05); /* Scale the image slightly when hovering */
+    transition: border 0.3s, transform 0.3s; /* Add transitions for a smooth effect */
+}

@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.left-arrow-button {
+    position: fixed;
+    left: 10px;
+    top: 5%;
+    transform: translateY(-50%);
+    /* background-color: #007bff; */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    /* border-radius: 50%; */
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999;
+}
+header {
+    background-color: #0761d4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: -7px; /* Adjust the top value as needed */
+    z-index: 2; /* Add a higher z-index value */
+}
+
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+body{
+    background-color: #333333;;
+}
+.album {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 22px 16px;
+    
+}
+
+.album:hover {
+    transform: scale(1.05);
+    z-index: 1; /* Add a lower z-index value to the album so it appears beneath the header */
+}
+
+.album img {
+    max-width: 100%;
+    height: auto;
+}
+
+.album h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
