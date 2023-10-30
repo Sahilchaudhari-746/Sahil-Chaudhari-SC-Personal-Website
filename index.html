@@ -19,14 +19,15 @@
       background-color: #2a2929;
       position: fixed;
       top: 4.3rem;
-      right: 0;
+      right: -35%;
       bottom: 0;
       z-index: 1000;
       flex-direction: column;
       padding: 1rem;
       text-align: center;
       width: 35%;
-     
+     transition: all;
+     transition-duration: 0.5s;
     }
 
     .mobile-menu a {
@@ -462,12 +463,12 @@
       backSpeed: 50,
       loop: true
     })
-  </script>
+  
 
 
 
-  <script>
-      < script >
+ 
+      
       document.addEventListener("DOMContentLoaded", function () {
         // Get all the work div blocks and convert them to an array
         var workBlocks = Array.from(document.querySelectorAll(".my-work-container .work"));
@@ -490,7 +491,7 @@
         showWorkBlock(currentIndex);
 
         // Add event listener for the Next button
-        document.getElementById("next-btn").addEventListener("click", function () {
+        document.getElementById("next-dot").addEventListener("click", function () {
           currentIndex++;
           if (currentIndex >= workBlocks.length) {
             currentIndex = 0; // Wrap around to the first work block
@@ -499,7 +500,7 @@
         });
 
         // Add event listener for the Previous button
-        document.getElementById("prev-btn").addEventListener("click", function () {
+        document.getElementById("prev-dot").addEventListener("click", function () {
           currentIndex--;
           if (currentIndex < 0) {
             currentIndex = workBlocks.length - 1; // Wrap around to the last work block
@@ -507,11 +508,7 @@
           showWorkBlock(currentIndex);
         });
       });
-  </script>
-
-
-  </script>
-  <script>
+ 
     document.addEventListener("DOMContentLoaded", function () {
       var workBlocks = document.querySelectorAll(".my-work-container .work");
       var currentIndex = 0;
@@ -557,9 +554,7 @@
       document.getElementById("next-dot").addEventListener("click", goToNextWork);
       document.getElementById("prev-dot").addEventListener("click", goToPrevWork);
     });
-  </script>
-
-  <script>
+ 
 
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -599,8 +594,7 @@
       });
     });
 
-  </script>
-  <script>
+ 
     function showSkills() {
       document.getElementById("skills").style.display = "block";
       document.getElementById("photos").style.display = "none";
@@ -623,8 +617,7 @@
     showSkills();
 
 
-  </script>
-  <script>
+ 
     function showSkills() {
       var skillsDiv = document.getElementById("skills");
       var photosDiv = document.getElementById("photos");
@@ -650,9 +643,7 @@
     }
 
 
-  </script>
-  <script src="script2.js"></script>
-  <script>
+
     let abtitems = document.getElementsByClassName("tab-links");
     let tabcontents = document.getElementsByClassName("tab-content");
     function show(tabname) {
@@ -665,41 +656,41 @@
       event.currentTarget.classList.add("active-item");
       document.getElementById(tabname).classList.add("active-content")
     }
-  </script>
-  <script>
+  
     const navbar = document.getElementById('navbarexample');
     const mobileMenu = document.querySelector('.mobile-menu');
 
     // Function to toggle the mobile menu visibility
     function toggleMobileMenu() {
-      mobileMenu.style.display = (mobileMenu.style.display === 'flex') ? 'none' : 'flex';
+    
+      const currentRight = mobileMenu.style.right.trim();
+  mobileMenu.style.right = (currentRight === '0px') ? '-35%' : '0px';
+  console.log(mobileMenu.style.right)
     }
 
     // Add a click event listener to the navbar brand (hamburger icon) for toggling the mobile menu
     const navbarBrand = navbar.querySelector('.menubar');
     navbarBrand.addEventListener('click', toggleMobileMenu);
     let prevScrollPos = window.pageYOffset;
-  </script>
-  <script>
-    const darkIcon = document.getElementById('darkIcon');
-    const lightIcon = document.getElementById('lightIcon');
-    const body = document.body;
-    darkIcon.style.display = 'none';
-    darkIcon.addEventListener('click', function () {
-      body.classList.add('dark');
-      body.classList.remove('light');
-      lightIcon.style.display = 'inline-block';
-      darkIcon.style.display = 'none';
-    });
+ 
+    // const darkIcon = document.getElementById('darkIcon');
+    // const lightIcon = document.getElementById('lightIcon');
+    // const body = document.body;
+    // darkIcon.style.display = 'none';
+    // darkIcon.addEventListener('click', function () {
+    //   body.classList.add('dark');
+    //   body.classList.remove('light');
+    //   lightIcon.style.display = 'inline-block';
+    //   darkIcon.style.display = 'none';
+    // });
 
-    lightIcon.addEventListener('click', function () {
-      body.classList.add('light');
-      body.classList.remove('dark');
-      darkIcon.style.display = 'inline-block';
-      lightIcon.style.display = 'none';
-    });
-  </script>
-  <script>
+    // lightIcon.addEventListener('click', function () {
+    //   body.classList.add('light');
+    //   body.classList.remove('dark');
+    //   darkIcon.style.display = 'inline-block';
+    //   lightIcon.style.display = 'none';
+    // });
+
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxthiF3hpA3PMwtUhe_fFKmc0knrU1pbL9PUVy71o_1GrqNChmsFfLB3_1xv07IP3GtUA/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
