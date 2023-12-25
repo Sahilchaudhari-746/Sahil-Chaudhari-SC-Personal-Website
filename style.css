@@ -456,8 +456,9 @@ span {
     display: none;
 }
 
+
 .view-button {
-    display: none;
+    opacity: 0;
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -466,21 +467,17 @@ span {
     cursor: pointer;
     border-radius: 10px;
     background: linear-gradient(#0761d4, #04488e);
-    /* Button background gradient */
     color: white;
-    /* Button text color */
     border: none;
-    transition: background-color 0.3s ease-in-out;
-    /* Add a transition for button background color */
+    transition: opacity 0.3s ease-in-out, background 0.5s ease-in-out, transform 0.3s ease-in-out;
 }
-
 
 .card:hover .view-button {
-    display: block;
+    opacity: 1;
     background: linear-gradient(#04488e, #0761d4);
-    
-    /* Update the button background gradient when hovering */
+    transform: translateX(-50%) scale(1.1);
 }
+
 
 .pictures p {
     margin-right: 3rem;
